@@ -1,0 +1,134 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4526561020227152243
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4526561020227152242}
+  - component: {fileID: 4526561020227152253}
+  - component: {fileID: 4526561020227152252}
+  - component: {fileID: 4526561020227152255}
+  - component: {fileID: 4526561020227152254}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4526561020227152242
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4526561020227152243}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.2671394, y: -1.9445724, z: 0.13574219}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4526561020227152253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4526561020227152243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0cbc339b3d85c8449cc2cbc4d2f7203, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key:
+  - {fileID: 0}
+  exitDoor: {fileID: 0}
+  keyCount: {fileID: 0}
+--- !u!114 &4526561020227152252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4526561020227152243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 041b6163d8d94aa47b3e5df1864377b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioMixer: {fileID: 24100000, guid: 0ba95dda02a047744b6f530fd5c5f827, type: 2}
+  sound:
+  - audioMixerGroup: {fileID: 243103184598047570, guid: 0ba95dda02a047744b6f530fd5c5f827,
+      type: 2}
+    clipName: Bumhunter Theme
+    clip: {fileID: 8300000, guid: a701bc2d2f5ee4d4b89ce644d5eb2483, type: 3}
+    volume: 0.177
+    pitch: 1
+    loop: 1
+    playOneAwake: 0
+  - audioMixerGroup: {fileID: 243382920413368460, guid: 0ba95dda02a047744b6f530fd5c5f827,
+      type: 2}
+    clipName: Key Sound
+    clip: {fileID: 8300000, guid: 56d9043d2d31410438781a692397eda9, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOneAwake: 0
+  - audioMixerGroup: {fileID: 243382920413368460, guid: 0ba95dda02a047744b6f530fd5c5f827,
+      type: 2}
+    clipName: Push the Box
+    clip: {fileID: 8300000, guid: f2062ac5b9e2dde42984e597e027ea07, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOneAwake: 0
+  - audioMixerGroup: {fileID: 243382920413368460, guid: 0ba95dda02a047744b6f530fd5c5f827,
+      type: 2}
+    clipName: Shoot Sound
+    clip: {fileID: 8300000, guid: 826c9f830a590464f8bb01dee17416ea, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOneAwake: 0
+  - audioMixerGroup: {fileID: 243382920413368460, guid: 0ba95dda02a047744b6f530fd5c5f827,
+      type: 2}
+    clipName: Boost
+    clip: {fileID: 8300000, guid: ecb8c3905056b29448598f1406f3ab0d, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOneAwake: 0
+--- !u!114 &4526561020227152255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4526561020227152243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec1d98d4d75afa40bd60d3ca3bf2f31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PausedWindow: {fileID: 0}
+  OptionsWindow: {fileID: 0}
+  HelpWindow: {fileID: 0}
+  MenuUI: {fileID: 0}
+--- !u!114 &4526561020227152254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4526561020227152243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5db728d127cc76b4cbc4ef986ccad0b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
